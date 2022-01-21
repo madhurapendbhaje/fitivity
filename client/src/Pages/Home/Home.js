@@ -15,26 +15,34 @@ function Home() {
 
       <section className="suggested-challenges">
         <label className="challenges-container__label">Suggested for you</label>
-        <div className="challenges-container">
-          <div className="challenges-container__text--difficulty">Advanced</div>
-          <div className="challenges-container__text">AB Challenge</div>
-          <div className="challenges-container__block">
-            <img src={clock} />
-            <div className="challenges-container__text--duration">7 Days</div>
+        <Link to="/personal-challenge/categories/abs" className="link">
+          <div className="challenges-container">
+            <div className="challenges-container__text--difficulty">
+              Advanced
+            </div>
+            <div className="challenges-container__text">AB Challenge</div>
+            <div className="challenges-container__block">
+              <img src={clock} />
+              <div className="challenges-container__text--duration">7 Days</div>
+            </div>
           </div>
         </Link>
       </section>
 
       <section className="suggested-challenges">
         <label className="challenges-container__label">Most Popular</label>
-        <div className="challenges-container--popular">
-          <div className="challenges-container__text--difficulty">Beginner</div>
-          <div className="challenges-container__text">
-            Mindfullness Challenge
-          </div>
-          <div className="challenges-container__block">
-            <img src={clock} />
-            <div className="challenges-container__text--duration">4 Days</div>
+        <Link to="/personal-challenge/categories/yoga" className="link">
+          <div className="challenges-container--popular">
+            <div className="challenges-container__text--difficulty">
+              Beginner
+            </div>
+            <div className="challenges-container__text">
+              Mindfullness Challenge
+            </div>
+            <div className="challenges-container__block">
+              <img src={clock} />
+              <div className="challenges-container__text--duration">4 Days</div>
+            </div>
           </div>
         </Link>
       </section>

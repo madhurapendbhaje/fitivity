@@ -7,12 +7,11 @@ import { API_URL } from "../../util/Api";
 import Tag from "../../components/Tag";
 import DayCard from "../../components/DayCard";
 import { Link } from "react-router-dom";
-// import testVideo from "../../styles/assets/videos/test-video.mp4";
 
 export default class PersonalChalDetails extends Component {
   state = {
     selectedChallenge: {},
-    error: false,
+    error: false
   };
 
   componentDidMount() {

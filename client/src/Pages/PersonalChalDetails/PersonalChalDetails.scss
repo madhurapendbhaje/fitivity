@@ -5,6 +5,12 @@
 .challenge-container {
   background-color: $primary-background-color;
 
+  &__back {
+    width: 3rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
   &__banner-container {
     width: 100%;
   }

@@ -3,16 +3,17 @@ import "./PersonalChalDetails.scss";
 import React, { Component } from "react";
 import axios from "axios";
 
+import back from "../../assets/icons/back.svg";
+
 import { API_URL } from "../../util/Api";
 import Tag from "../../components/Tag";
 import DayCard from "../../components/DayCard";
 import { Link } from "react-router-dom";
-// import testVideo from "../../styles/assets/videos/test-video.mp4";
 
 export default class PersonalChalDetails extends Component {
   state = {
     selectedChallenge: {},
-    error: false,
+    error: false
   };
 
   componentDidMount() {
@@ -42,14 +43,16 @@ export default class PersonalChalDetails extends Component {
       image,
       icon,
       description,
-      challenges,
+      challenges
     } = this.state.selectedChallenge;
     return (
       <div className="challenge-container">
         <div className="challenge-container__banner-container">
           <img src={image} className="challenge-container__banner" />
         </div>
-
+        <Link to="/personal-challenge/categories/abs">
+          <img className="challenge-container__back" src={back} />
+        </Link>
         <div className="challenge-header">
           <div className="challenge-header__image-container" alt="header">
             <img src={icon} className="challenge-header__image" />
@@ -82,7 +85,8 @@ export default class PersonalChalDetails extends Component {
               return (
                 <Link
                   key={dayData.id}
-                  to={`/personal-challenge/${id}/${dayData.id}`}
+                  to={"/Day1"}
+                  // to={`/personal-challenge/${id}/${dayData.id}`}
                   className="challenge-tasks__link"
                 >
                   <DayCard dayData={dayData} />

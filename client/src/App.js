@@ -6,6 +6,7 @@ import PersonalChalReport from "./Pages/PersonalChalReport/PersonalChalReport";
 import TeamChalList from "./Pages/TeamChalList/TeamChalList";
 import TeamChalDetails from "./Pages/TeamChalDetails/TeamChalDetails";
 import Home from "./Pages/Home/Home";
+import Day1Page from "./Pages/Day1Page/Day1Page";
 
 function App() {
   return (
@@ -19,14 +20,14 @@ function App() {
           component={PersonalChalList}
         />
         <Route
-          path="/personal-challenge/report/:challengeId"
+          path="/personal-challenge/report"
           component={PersonalChalReport}
         />
         <Route
           path="/personal-challenge/:challengeId"
           component={PersonalChalDetails}
         />
-        <Route path="/personal-challenge/:challengeId/:taskId" component />
+        <Route path="/Day1" component={Day1Page} />
         <Route path="/team-challenge" exact component={TeamChalList} />
         <Route path="/team-challenge/report/:challengeId" component />
         <Route

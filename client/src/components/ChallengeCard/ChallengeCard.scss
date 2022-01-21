@@ -1,0 +1,28 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+
+.challenge-card {
+  width: 100%;
+  padding: $section-padding $vertical-padding;
+  margin-bottom: $section-padding;
+  background-color: $card-background-color;
+  border-radius: 0.3125rem;
+  display: flex;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__image {
+    width: 40%;
+    border-radius: 5%;
+    margin-right: 1rem;
+  }
+
+  &__title {
+    margin: 0;
+  }
+}

@@ -16,10 +16,11 @@
 .challenge-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
   padding: 0 1rem;
   position: absolute;
-  top: 170px;
+  top: 12.5rem;
+  width: 100%;
 
   &__image {
     width: 70px;
@@ -35,7 +36,7 @@
     width: 50%;
     text-transform: uppercase;
     padding: 0;
-    line-height: 1.8rem;
+    line-height: 2rem;
     font-size: $page-header-font-size;
     margin: 0;
   }
@@ -57,26 +58,42 @@
 .challenge-details {
   background-color: $primary-background-color;
   padding: $section-padding $vertical-padding;
+  width: 100%;
 
   &__about {
     display: flex;
+    width: 100%;
     &-title {
-      margin-right: 2rem;
-      padding: 1.5rem 0 1rem;
+      margin: 0;
+      width: 20%;
+    }
+    &-text {
+      margin: 0;
+      width: 80%;
     }
   }
 
   &__focus {
+    width: 100%;
     display: flex;
+    padding-top: $section-padding;
     &-title {
       margin: 0;
-      padding: 1rem 0;
+      width: 20%;
     }
     &-container {
-      width: 100%;
+      width: 80%;
       display: flex;
-      align-items: center;
-      justify-content: space-evenly;
     }
+    &-text {
+      padding-right: 1rem;
+    }
+  }
+}
+
+.challenge-tasks {
+  padding-top: 1rem;
+  &__link {
+    text-decoration: none;
   }
 }

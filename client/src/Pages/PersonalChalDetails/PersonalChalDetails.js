@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 export default class PersonalChalDetails extends Component {
   state = {
     selectedChallenge: {},
-    error: false
+    error: false,
   };
 
   componentDidMount() {
@@ -43,13 +43,7 @@ export default class PersonalChalDetails extends Component {
         <div className="challenge-header">
           <div className="challenge-header__image" alt="header"></div>
           <h3 className="challenge-header__title">{title}</h3>
-<<<<<<< HEAD
           <Tag tagText={difficulty} />
-=======
-          <div className="challenge-header__level">
-            <Tag tagText={difficulty} />
-          </div>
->>>>>>> 81c31cb51f7931bb7b8e57317c2309ae6b429563
         </div>
         <div className="challenge-details">
           <div className="challenge-details__about">
@@ -60,13 +54,13 @@ export default class PersonalChalDetails extends Component {
             <h3 className="challenge-details__focus-title">Areas of Focus</h3>
             <div className="challenge-details__focus-container">
               <div>
-                <p>Strain</p>
+                <p className="challenge-details__focus-text">Strain</p>
               </div>
               <div>
-                <p>Recovery</p>
+                <p className="challenge-details__focus-text">Recovery</p>
               </div>
               <div>
-                <p>Sleep</p>
+                <p className="challenge-details__focus-text">Sleep</p>
               </div>
             </div>
           </div>
@@ -77,6 +71,7 @@ export default class PersonalChalDetails extends Component {
                 <Link
                   key={dayData.id}
                   to={`/personal-challenge/${id}/${dayData.id}`}
+                  className="challenge-tasks__link"
                 >
                   <DayCard dayData={dayData} image={image} />
                 </Link>

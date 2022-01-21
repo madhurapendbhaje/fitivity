@@ -9,6 +9,10 @@ body {
 
 .link {
   text-decoration: none;
+  :hover {
+    transform: scale(1.025);
+    transition: 1s;
+  }
 }
 .home-header {
   display: flex;
@@ -48,7 +52,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
-  background-image: url("../../assets//images/ab-challenge.jpg");
+  background-image: url("../../assets/images/ab-challenge.jpg");
   background-position: center;
   background-size: cover;
   height: 10rem;
@@ -156,7 +160,7 @@ body {
       justify-content: space-between;
       background-color: #d0423c;
       width: 10rem;
-      background-image: url("../../assets/images//yoga-categories.jpg");
+      background-image: url("../../assets/images/yoga-categories.jpg");
       background-position: center;
       background-size: cover;
       height: 10rem;

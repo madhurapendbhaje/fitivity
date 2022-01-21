@@ -23,5 +23,9 @@
   &__link {
     text-decoration: none;
     color: $primary-font-color;
+    :hover {
+      transform: scale(1.025);
+      transition: 1s;
+    }
   }
 }

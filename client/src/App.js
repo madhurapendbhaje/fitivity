@@ -1,21 +1,28 @@
 import "./App.css";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import HomePage from "./Pages/HomePage/HomePage";
-import PersonalChal from "./Pages/PersonalChal/PersonalChal";
-import TeamChal from "./Pages/TeamChal/TeamChal";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import PersonalChalList from "./Pages/PersonalChalList/PersonalChalList";
+import PersonalChalDetails from "./Pages/PersonalChalDetails/PersonalChalDetails";
+import TeamChalList from "./Pages/TeamChalList/TeamChalList";
+import TeamChalDetails from "./Pages/TeamChalDetails/TeamChalDetails";
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" exact component={HomePage} />
-        <Route path="/personal-challenge" component={PersonalChal} />
+        <Redirect from="/" exact to="/personal-challenge" />
+        <Route path="/personal-challenge" exact component={PersonalChalList} />
         <Route path="/personal-challenge/report/:challengeId" component />
-        <Route path="/personal-challenge/:challengeId" component />
+        <Route
+          path="/personal-challenge/:challengeId"
+          component={PersonalChalDetails}
+        />
         <Route path="/personal-challenge/:challengeId/:taskId" component />
-        <Route path="/team-challenge" component={TeamChal} />
+        <Route path="/team-challenge" exact component={TeamChalList} />
         <Route path="/team-challenge/report/:challengeId" component />
-        <Route path="/team-challenge/:challengeId" component />
+        <Route
+          path="/team-challenge/:challengeId"
+          component={TeamChalDetails}
+        />
         <Route path="/team-challenge/:challengeId/:taskId" component />
       </Switch>
     </BrowserRouter>

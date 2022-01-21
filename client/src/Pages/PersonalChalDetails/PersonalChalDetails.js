@@ -9,12 +9,11 @@ import { API_URL } from "../../util/Api";
 import Tag from "../../components/Tag";
 import DayCard from "../../components/DayCard";
 import { Link } from "react-router-dom";
-// import testVideo from "../../styles/assets/videos/test-video.mp4";
 
 export default class PersonalChalDetails extends Component {
   state = {
     selectedChallenge: {},
-    error: false,
+    error: false
   };
 
   componentDidMount() {
@@ -44,7 +43,7 @@ export default class PersonalChalDetails extends Component {
       image,
       icon,
       description,
-      challenges,
+      challenges
     } = this.state.selectedChallenge;
     return (
       <div className="challenge-container">
@@ -86,7 +85,8 @@ export default class PersonalChalDetails extends Component {
               return (
                 <Link
                   key={dayData.id}
-                  to={`/personal-challenge/${id}/${dayData.id}`}
+                  to={"/Day1"}
+                  // to={`/personal-challenge/${id}/${dayData.id}`}
                   className="challenge-tasks__link"
                 >
                   <DayCard dayData={dayData} />

@@ -72,7 +72,7 @@ export default class PersonalChalDetails extends Component {
                   key={dayData.id}
                   to={`/personal-challenge/${id}/${dayData.id}`}
                 >
-                  <DayCard dayData={dayData} />
+                  <DayCard dayData={dayData} image={image} />
                 </Link>
               );
             })}

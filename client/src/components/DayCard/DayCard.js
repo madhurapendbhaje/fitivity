@@ -1,4 +1,5 @@
 import "./DayCard.scss";
+import arrow from "../../assets/icons/arrow.svg";
 
 function DayCard({ dayData }) {
   const { day, description, image } = dayData;
@@ -12,7 +13,7 @@ function DayCard({ dayData }) {
         <h3 className="day-card__title">{day}</h3>
         <p className="day-card__description">{description.join(", ")}</p>
       </div>
-      <img></img>
+      <img src={arrow} alt="arrow icon" className="day-card__arrow" />
     </article>
   );
 }

@@ -42,7 +42,6 @@
 
   &__level {
     display: flex;
-<<<<<<< HEAD
     align-items: center;
     text-transform: uppercase;
     background-color: $primary-cta-color;
@@ -51,27 +50,18 @@
     height: 30px;
     margin-top: 1.5rem;
     padding: 0 0.5rem;
-=======
     align-items: flex-end;
->>>>>>> 81c31cb51f7931bb7b8e57317c2309ae6b429563
   }
 }
 
 .challenge-details {
   background-color: $primary-background-color;
-<<<<<<< HEAD
-
-  &__about {
-    &-title {
-      margin: 0;
-=======
   padding: $section-padding $vertical-padding;
 
   &__about {
     display: flex;
     &-title {
       margin-right: 2rem;
->>>>>>> 81c31cb51f7931bb7b8e57317c2309ae6b429563
       padding: 1.5rem 0 1rem;
     }
   }

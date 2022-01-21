@@ -14,8 +14,9 @@ export default class PersonalChal extends Component {
   };
 
   componentDidMount() {
+    const category = this.props.match.params.category;
     axios
-      .get(`${API_URL}/challenges`)
+      .get(`${API_URL}/categories/${category}`)
       .then((response) => {
         this.setState({ challengesList: response.data });
       })

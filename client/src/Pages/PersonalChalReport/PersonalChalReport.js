@@ -3,6 +3,10 @@ import "./PersonalChalReport.scss";
 
 export default class PersonalChalReport extends Component {
   render() {
-    return <div></div>;
+    return (
+      <div>
+        <div></div>
+      </div>
+    );
   }
 }

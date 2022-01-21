@@ -9,6 +9,9 @@ const port = process.env.PORT || 8080;
 // Enable CORS
 app.use(cors());
 
+// Allows to serve static files from folder
+app.use(express.static("public/images"));
+
 app.use("/challenges", challengesRoutes);
 
 app.listen(port, () => {

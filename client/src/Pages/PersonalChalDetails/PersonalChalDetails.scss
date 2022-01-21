@@ -2,6 +2,11 @@
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/variables" as *;
 
+.challenge-container {
+  padding: $section-padding $vertical-padding;
+  background-color: $primary-background-color;
+}
+
 .challenge-video {
   width: 100%;
   margin: 0;
@@ -52,6 +57,21 @@
   &__about {
     &-title {
       margin: 0;
+      padding: 1.5rem 0 1rem;
+    }
+  }
+
+  &__focus {
+    display: flex;
+    &-title {
+      margin: 0;
+      padding: 1rem 0;
+    }
+    &-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
     }
   }
 }

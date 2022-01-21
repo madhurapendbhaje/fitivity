@@ -1,5 +1,7 @@
 import "./Home.scss";
 
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <>
@@ -12,53 +14,69 @@ function Home() {
 
       <section className="suggested-challenges">
         <label className="challenges-container__label">Suggested for you</label>
-        <div className="challenges-container">
-          <div className="challenges-container__text--difficulty">Advanced</div>
-          <div className="challenges-container__text">AB Challenge</div>
-          <div className="challenges-container__block">
-            <img />
-            <div className="challenges-container__text">7 Days</div>
+        <Link to="/personal-challenge/categories/abs" className="link">
+          <div className="challenges-container">
+            <div className="challenges-container__text--difficulty">
+              Advanced
+            </div>
+            <div className="challenges-container__text">AB Challenge</div>
+            <div className="challenges-container__block">
+              <img />
+              <div className="challenges-container__text">7 Days</div>
+            </div>
           </div>
-        </div>
+        </Link>
       </section>
 
       <section className="suggested-challenges">
         <label className="challenges-container__label">Most Popular</label>
-        <div className="challenges-container--popular">
-          <div className="challenges-container__text--difficulty">Beginner</div>
-          <div className="challenges-container__text">
-            Mindfullness Challenge
+        <Link to="/personal-challenge/categories/yoga" className="link">
+          <div className="challenges-container--popular">
+            <div className="challenges-container__text--difficulty">
+              Beginner
+            </div>
+            <div className="challenges-container__text">
+              Mindfulness Challenge
+            </div>
+            <div className="challenges-container__block">
+              <img />
+              <div className="challenges-container__text">4 Days</div>
+            </div>
           </div>
-          <div className="challenges-container__block">
-            <img />
-            <div className="challenges-container__text">4 Days</div>
-          </div>
-        </div>
+        </Link>
       </section>
 
       <section>
         <div className="categories-container">
           <label className="categories-container__label">Categories</label>
           <div className="categories-container__box">
-            <div className="categories-container__block--1">
-              <div className="categories-container__category">ABS</div>
-              <div className="categories-container__category">15 days</div>
-            </div>
+            <Link to="/personal-challenge/categories/abs" className="link">
+              <div className="categories-container__block--1">
+                <div className="categories-container__category">ABS</div>
+                <div className="categories-container__category">15 days</div>
+              </div>
+            </Link>
 
-            <div className="categories-container__block--2">
-              <div className="categories-container__category">BACK</div>
-              <div className="categories-container__category">30 days</div>
-            </div>
+            <Link to="/personal-challenge/categories/back" className="link">
+              <div className="categories-container__block--2">
+                <div className="categories-container__category">BACK</div>
+                <div className="categories-container__category">30 days</div>
+              </div>
+            </Link>
 
-            <div className="categories-container__block--3">
-              <div className="categories-container__category">YOGA</div>
-              <div className="categories-container__category">15 days</div>
-            </div>
+            <Link to="/personal-challenge/categories/yoga" className="link">
+              <div className="categories-container__block--3">
+                <div className="categories-container__category">YOGA</div>
+                <div className="categories-container__category">15 days</div>
+              </div>
+            </Link>
 
-            <div className="categories-container__block--4">
-              <div className="categories-container__category">LEGS</div>
-              <div className="categories-container__category">30 days</div>
-            </div>
+            <Link to="/personal-challenge/categories/legs" className="link">
+              <div className="categories-container__block--4">
+                <div className="categories-container__category">LEGS</div>
+                <div className="categories-container__category">30 days</div>
+              </div>
+            </Link>
           </div>
         </div>
       </section>

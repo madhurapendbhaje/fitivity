@@ -6,6 +6,15 @@
   background-color: $primary-background-color;
   padding: $section-padding $vertical-padding;
 
+  &__container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  &__logo {
+    width: 2rem;
+    margin-right: 1rem;
+  }
   &__title {
     margin: 0;
     color: $primary-font-color;

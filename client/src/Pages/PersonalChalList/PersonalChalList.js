@@ -1,4 +1,5 @@
 import "./PersonalChalList.scss";
+import back from "../../assets/icons/back.svg";
 
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
@@ -30,7 +31,12 @@ export default class PersonalChal extends Component {
     }
     return (
       <div className="personal-challenge">
-        <h1 className="personal-challenge__title">Personal Challenges</h1>
+        <div className="personal-challenge__container">
+          <Link to="/">
+            <img className="personal-challenge__logo" src={back} />
+          </Link>
+          <h1 className="personal-challenge__title">Personal Challenges</h1>
+        </div>
         {this.state.challengesList.map((challengeData) => {
           return (
             <Link

@@ -3,6 +3,8 @@ import "./PersonalChalDetails.scss";
 import React, { Component } from "react";
 import axios from "axios";
 
+import back from "../../assets/icons/back.svg";
+
 import { API_URL } from "../../util/Api";
 import Tag from "../../components/Tag";
 import DayCard from "../../components/DayCard";
@@ -49,7 +51,9 @@ export default class PersonalChalDetails extends Component {
         <div className="challenge-container__banner-container">
           <img src={image} className="challenge-container__banner" />
         </div>
-
+        <Link to="/personal-challenge/categories/abs">
+          <img className="challenge-container__back" src={back} />
+        </Link>
         <div className="challenge-header">
           <div className="challenge-header__image-container" alt="header">
             <img src={icon} className="challenge-header__image" />

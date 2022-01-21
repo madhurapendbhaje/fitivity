@@ -37,7 +37,7 @@ function Home() {
               Beginner
             </div>
             <div className="challenges-container__text">
-              Mindfullness Challenge
+              Mindfulness Challenge
             </div>
             <div className="challenges-container__block">
               <img src={clock} />

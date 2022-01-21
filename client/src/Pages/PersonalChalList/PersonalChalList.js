@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./PersonalChal.scss";
+import "./PersonalChalList.scss";
 
 export default class PersonalChal extends Component {
   render() {

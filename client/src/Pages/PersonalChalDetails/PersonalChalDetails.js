@@ -34,15 +34,26 @@ export default class PersonalChalDetails extends Component {
         <div>Error loading the challenge details, please try again later.</div>
       );
     }
-    const { id, title, difficulty, duration, image, description, challenges } =
-      this.state.selectedChallenge;
+    const {
+      id,
+      title,
+      difficulty,
+      duration,
+      image,
+      icon,
+      description,
+      challenges,
+    } = this.state.selectedChallenge;
     return (
       <div className="challenge-container">
-        <video loop autoPlay className="challenge-video" poster={image}>
-          {/* <source src={testVideo} type="video/mp4" /> */}
-        </video>
+        <div className="challenge-container__banner-container">
+          <img src={image} className="challenge-container__banner" />
+        </div>
+
         <div className="challenge-header">
-          <div className="challenge-header__image" alt="header"></div>
+          <div className="challenge-header__image-container" alt="header">
+            <img src={icon} className="challenge-header__image" />
+          </div>
           <h3 className="challenge-header__title">{title}</h3>
           <Tag tagText={difficulty} />
         </div>

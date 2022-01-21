@@ -5,7 +5,8 @@
     "difficulty": "Advanced",
     "duration": 7,
     "image": "http://localhost:8080/image0.jpeg",
-    "description": "The ab workout challenge is all about getting a rock-hard core and six-pack.Include movements like crunches, sit-ups, leg raises, mountain climbers, and burpees."
+    "description": "The ab workout challenge is all about getting a rock-hard core and six-pack. Include movements like crunches, sit-ups, leg raises, mountain climbers, and burpees.",
+    "challenges": []
   },
   {
     "id": "35bba08b-1b51-4153-ba7e-6da76b5ec1b9",
@@ -21,7 +22,7 @@
     "difficulty": "Beginner",
     "duration": 5,
     "image": "http://localhost:8080/image2.jpeg",
-    "description": "This challenge aims to develop healthy lifestyle habits.While fitness can improve your physical health, nutrition also plays a big role in achieving your goals."
+    "description": "This challenge aims to develop healthy lifestyle habits. While fitness can improve your physical health, nutrition also plays a big role in achieving your goals."
   },
   {
     "id": "66b7d3c7-4023-47f1-a02c-520c9ca187a6",

@@ -4,6 +4,7 @@ const fs = require("fs");
 
 /**
  * Function to read from data file
+ * src: https://www.glofox.com/blog/fitness-challenges/
  */
 function readChallenges() {
   const data = fs.readFileSync("./data/challenges.json");

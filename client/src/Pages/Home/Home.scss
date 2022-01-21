@@ -7,6 +7,9 @@ body {
   background-color: $primary-background-color;
 }
 
+.link {
+  text-decoration: none;
+}
 .home-header {
   display: flex;
   justify-content: center;

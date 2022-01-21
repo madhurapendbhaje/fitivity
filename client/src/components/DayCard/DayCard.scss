@@ -1,0 +1,18 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+
+.day-card {
+  width: 100%;
+  background-color: $card-background-color;
+  margin-bottom: 1rem;
+
+  &__title {
+    margin: 0;
+    padding: 0.5rem 0;
+  }
+
+  &__description {
+    margin: 0;
+  }
+}

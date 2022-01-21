@@ -1,0 +1,42 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+
+.challenge-report {
+  background-color: $primary-background-color;
+  padding-top: 1rem;
+}
+
+.challenge-ring-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.challenge-info {
+  padding: 0 2rem;
+
+  &__title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+  }
+
+  &__congrats {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+}
+
+.lineChart-container {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: space-between;
+}

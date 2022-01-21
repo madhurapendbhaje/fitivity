@@ -1,0 +1,111 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+
+.challenge-container {
+  background-color: $primary-background-color;
+
+  &__back {
+    width: 3rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+  &__banner-container {
+    width: 100%;
+  }
+
+  &__banner {
+    margin: 0;
+    position: relative;
+    width: 100%;
+  }
+}
+
+.challenge-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 1rem;
+  position: absolute;
+  top: 12rem;
+  width: 100%;
+
+  &__image-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    background-color: $secondary-cta-color;
+  }
+
+  &__image {
+    padding-top: 0.2rem;
+    width: 100%;
+  }
+
+  &__title {
+    width: 50%;
+    text-transform: uppercase;
+    padding: 0;
+    line-height: 2rem;
+    font-size: $page-header-font-size;
+    margin: 0;
+  }
+
+  &__level {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: $primary-cta-color;
+    font-size: 12px;
+    line-height: 0;
+    height: 30px;
+    margin-top: 1.5rem;
+    padding: 0 0.5rem;
+    align-items: flex-end;
+  }
+}
+
+.challenge-details {
+  background-color: $primary-background-color;
+  padding: $section-padding $vertical-padding;
+  width: 100%;
+
+  &__about {
+    display: flex;
+    width: 100%;
+    &-title {
+      margin: 0;
+      width: 20%;
+    }
+    &-text {
+      margin: 0;
+      width: 80%;
+    }
+  }
+
+  &__focus {
+    width: 100%;
+    display: flex;
+    padding-top: $section-padding;
+    &-title {
+      margin: 0;
+      width: 20%;
+    }
+    &-container {
+      width: 80%;
+      display: flex;
+    }
+    &-text {
+      padding-right: 1rem;
+    }
+  }
+}
+
+.challenge-tasks {
+  padding-top: 1rem;
+  &__link {
+    text-decoration: none;
+  }
+}

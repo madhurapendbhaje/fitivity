@@ -1,0 +1,27 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+
+.personal-challenge {
+  background-color: $primary-background-color;
+  padding: $section-padding $vertical-padding;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  &__logo {
+    width: 2rem;
+    margin-right: 1rem;
+  }
+  &__title {
+    margin: 0;
+    color: $primary-font-color;
+    text-transform: capitalize;
+  }
+  &__link {
+    text-decoration: none;
+    color: $primary-font-color;
+  }
+}

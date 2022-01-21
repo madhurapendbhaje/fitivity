@@ -1,0 +1,246 @@
+[
+  {
+    "id": "84e96018-4022-434e-80bf-000ce4cd12b8",
+    "title": "Ab Challenge",
+    "difficulty": "Intermediate",
+    "duration": 7,
+    "image": "http://localhost:8080/abs-categories.jpg",
+    "icon": "http://localhost:8080/abs.svg",
+    "description": "The ab workout challenge is all about getting a rock-hard core and six-pack. Include movements like crunches, sit-ups, leg raises, mountain climbers, and burpees.",
+    "category": "Abs",
+    "challenges": [
+      {
+        "id": "550b5927-bced-459a-9776-baa0f617bacd",
+        "day": "Day 1",
+        "description": ["20 Sit Ups", "30 secs Plank"],
+        "image": "http://localhost:8080/day1.jpg"
+      },
+      {
+        "id": "9198786f-880b-4f96-9550-79f29dea7b7d",
+        "day": "Day 2",
+        "description": ["30 Sit Ups", "40 secs Plank"],
+        "image": "http://localhost:8080/day2.jpg"
+      },
+      {
+        "id": "4d4413eb-2305-47be-8ab6-8f37ef220d8e",
+        "day": "Day 3",
+        "description": ["40 Sit Ups", "50 secs Plank"],
+        "image": "http://localhost:8080/day3.jpg"
+      },
+      {
+        "id": "070af84b-82d0-4a08-b7e0-068f18fcf6a9",
+        "day": "Day 4",
+        "description": ["50 Sit Ups", "60 secs Plank"],
+        "image": "http://localhost:8080/day4.jpg"
+      },
+      {
+        "id": "6ed26f31-ff00-43ed-93cc-2db1ca3e6d99",
+        "day": "Day 5",
+        "description": ["60 Sit Ups", "70 secs Plank"],
+        "image": "http://localhost:8080/day5.jpg"
+      },
+      {
+        "id": "2409de0b-56bf-42b2-97f1-b49e85eb6234",
+        "day": "Day 6",
+        "description": ["70 Sit Ups", "80 secs Plank"],
+        "image": "http://localhost:8080/day6.jpg"
+      },
+      {
+        "id": "5668a07e-ad77-4fd5-a74c-5e0f9dff990f",
+        "day": "Day 7",
+        "description": ["5 Hanging Leg Raises", "70 Sit Ups", "90 secs Plank"],
+        "image": "http://localhost:8080/day7.jpg"
+      }
+    ]
+  },
+  {
+    "id": "ef432ea6-90d1-4ddc-8131-06db7d8efaee",
+    "title": "Six Pack Abs Challenge",
+    "difficulty": "Advanced",
+    "duration": 3,
+    "image": "http://localhost:8080/abs-categories-2.jpg",
+    "icon": "http://localhost:8080/abs.svg",
+    "description": "The ab workout challenge is all about getting a six-pack. Include movements like crunches, sit-ups, leg raises, mountain climbers, and burpees.",
+    "category": "Abs",
+    "challenges": [
+      {
+        "id": "f25558a4-9c12-4883-934d-411f475f1117",
+        "day": "Day 1",
+        "description": ["10 Hanging Leg Raises", "80 Sit Ups", "100 secs Plank"]
+      },
+      {
+        "id": "140567cc-13ca-455f-b753-4189496672d2",
+        "day": "Day 2",
+        "description": ["15 Hanging Leg Raises", "90 Sit Ups", "120 secs Plank"]
+      },
+      {
+        "id": "0bfd0476-1184-454c-8075-7f568779cd07",
+        "day": "Day 3",
+        "description": [
+          "20 Hanging Leg Raises",
+          "100 Sit Ups",
+          "120 secs Plank"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "35bba08b-1b51-4153-ba7e-6da76b5ec1b9",
+    "title": "Mindfulness Challenge",
+    "difficulty": "Beginner",
+    "duration": 4,
+    "image": "http://localhost:8080/yoga-categories.jpg",
+    "icon": "http://localhost:8080/yoga.svg",
+    "description": "The mindfulness challenge promotes the practice of feeling present which can help to reduce stress, anxiety, and make you feel calmer. Include a mindfulness diary, guided meditation videos, and calming audio guidance.",
+    "category": "Yoga",
+    "challenges": [
+      {
+        "id": "e0767917-5fb1-4d9c-9474-cd8766ef82f5",
+        "day": "Day 1",
+        "description": ["Practice deep breathing for 2mins."]
+      },
+      {
+        "id": "2074d64f-dfa0-49cc-b91c-4482664d922d",
+        "day": "Day 2",
+        "description": ["10mins walking meditation."]
+      },
+      {
+        "id": "ed42ec30-5213-4d16-b026-64e36c27b1ec",
+        "day": "Day 3",
+        "description": ["Read 10 pages of a book"]
+      },
+      {
+        "id": "",
+        "day": "Day 4",
+        "description": ["Take a 5min break to stretch."]
+      }
+    ]
+  },
+  {
+    "id": "091de676-61af-4ee6-90de-3a7a53af7521",
+    "title": "Healthy Eating Challenge",
+    "difficulty": "Beginner",
+    "duration": 4,
+    "image": "http://localhost:8080/healthy-eating-challenge.jpg",
+    "icon": "http://localhost:8080/yoga.svg",
+    "description": "This challenge aims to develop healthy lifestyle habits. While fitness can improve your physical health, nutrition also plays a big role in achieving your goals.",
+    "category": "Yoga",
+    "challenges": [
+      {
+        "id": "2c3bc55d-a4ed-4819-9308-7f084536d7f5",
+        "day": "Day 1",
+        "description": [
+          "Breakfast: Overnight Oats",
+          "Lunch: Mediterranean Bowl",
+          "Dinner: Tomato, Avocado & Arugula Salad"
+        ]
+      },
+      {
+        "id": "2554e64c-5348-4c3e-9377-2023e8e9a321",
+        "day": "Day 2",
+        "description": [
+          "Breakfast: Yogurt with Berries and Nuts",
+          "Lunch: Tomato & Basil Quinoa Risotto",
+          "Dinner: Avocado and Chicken salad"
+        ]
+      },
+      {
+        "id": "40801faa-f218-4c82-a1db-05186a7107db",
+        "day": "Day 3",
+        "description": [
+          "Breakfast: Banana Almond Breakfast Smoothie",
+          "Lunch: Vegetable Fried Millet",
+          "Dinner: Salmon with Asparagus"
+        ]
+      },
+      {
+        "id": "c20835d4-7b49-41b9-a342-7c5f72662264",
+        "day": "Day 4",
+        "description": [
+          "Breakfast: Strawberry Banana Pancakes",
+          "Lunch: Tomato Chickpea Salad",
+          "Dinner: Salmon Lettuce wraps"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "66b7d3c7-4023-47f1-a02c-520c9ca187a6",
+    "title": "Squat Challenge",
+    "difficulty": "Intermediate",
+    "duration": 7,
+    "image": "http://localhost:8080/squat-challenge.jpg",
+    "icon": "http://localhost:8080/legs.svg",
+    "description": "The squat challenge is ideal for your lower body. Members start by completing a certain number of reps in the first few days. This number gradually increases so that by the end of the 7 days members are doing more reps and are feeling the difference in their glutes.",
+    "category": "Legs",
+    "challenges": [
+      {
+        "id": "df28f938-ecf2-4707-a327-4dcff12ed460",
+        "day": "Day 1",
+        "description": ["25 Squats"]
+      },
+      {
+        "id": "e8bafd7d-9584-48bf-bb40-84eeada33abb",
+        "day": "Day 2",
+        "description": ["25 Split Squats"]
+      },
+      {
+        "id": "25fec219-b0ea-48c9-a971-016ac2192b4e",
+        "day": "Day 3",
+        "description": ["25 Sumo Squats"]
+      },
+      {
+        "id": "064825c0-5264-48c5-9885-8cfda070afd2",
+        "day": "Day 4",
+        "description": ["Rest"]
+      },
+      {
+        "id": "baae1d58-748e-4721-b4ab-998a99b9d559",
+        "day": "Day 5",
+        "description": ["25 Jump Squats"]
+      },
+      {
+        "id": "fcd70a42-1581-478e-9e81-614776b46b02",
+        "day": "Day 6",
+        "description": ["25 Squat Pulses"]
+      },
+      {
+        "id": "5ba2f8c2-84c5-4d4d-9c4c-24b5fc2ab583",
+        "day": "Day 7",
+        "description": ["25 Knee Squats"]
+      }
+    ]
+  },
+  {
+    "id": "7f6222c2-6a56-41a5-a0a1-57c222c6f3e8",
+    "title": "Back Challenge",
+    "difficulty": "Beginner",
+    "duration": 4,
+    "image": "http://localhost:8080/back-categories.jpg",
+    "icon": "http://localhost:8080/yoga.svg",
+    "description": "The back challenge is ideal for your upper back and shoulders.",
+    "category": "Back",
+    "challenges": [
+      {
+        "id": "e7ed47e5-a240-4730-9e1a-2ff2b9bba147",
+        "day": "Day 1",
+        "description": ["30 min Timed Resistance band"]
+      },
+      {
+        "id": "9f374faa-8ea6-4759-b968-dcfde6871ec4",
+        "day": "Day 2",
+        "description": ["Cardio circuit"]
+      },
+      {
+        "id": "52dca118-f7a2-46c8-827f-4ba1309530d5",
+        "day": "Day 3",
+        "description": ["Back pulse"]
+      },
+      {
+        "id": "5985bb8d-48f8-4c57-ad81-be59469917e6",
+        "day": "Day 4",
+        "description": ["Air Pull-up"]
+      }
+    ]
+  }
+]

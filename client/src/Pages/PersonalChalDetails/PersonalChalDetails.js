@@ -7,6 +7,7 @@ import { API_URL } from "../../util/Api";
 import Tag from "../../components/Tag";
 import DayCard from "../../components/DayCard";
 import { Link } from "react-router-dom";
+// import testVideo from "../../styles/assets/videos/test-video.mp4";
 
 export default class PersonalChalDetails extends Component {
   state = {
@@ -38,7 +39,7 @@ export default class PersonalChalDetails extends Component {
     return (
       <div className="challenge-container">
         <video loop autoPlay className="challenge-video" poster={image}>
-          {/* <source src="" type="video/mp4" /> */}
+          {/* <source src={testVideo} type="video/mp4" /> */}
         </video>
         <div className="challenge-header">
           <div className="challenge-header__image" alt="header"></div>

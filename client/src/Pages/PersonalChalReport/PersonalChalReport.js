@@ -70,7 +70,6 @@ export default class PersonalChalReport extends Component {
     selectedChallenge: {},
     error: false
   };
-  static demoUrl = "https://codesandbox.io/s/simple-line-chart-kec3v";
 
   componentDidMount() {
     const challengeId = this.props.match.params.challengeId;

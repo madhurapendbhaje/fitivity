@@ -35,4 +35,22 @@ router.get("/", (_req, res) => {
   res.send(strippedData);
 });
 
+// GET endpoint for an individual challenge
+router.get("/:id", (req, res) => {
+  // Read challenges data from file
+  const challengesData = readChallenges();
+
+  // Find individual challenge from provided challenge id in url
+  const selectedChallenge = challengesData.find(
+    (challenge) => challenge.id === req.params.id
+  );
+
+  if (!selectedChallenge) {
+    return res.status(404).send("Requested challenge not found");
+  }
+
+  // Respond with the selected challenge
+  res.json(selectedChallenge);
+});
+
 module.exports = router;

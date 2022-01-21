@@ -1,4 +1,5 @@
 import "./Home.scss";
+import clock from "../../assets/icons/Clock.svg";
 
 function Home() {
   return (
@@ -16,8 +17,8 @@ function Home() {
           <div className="challenges-container__text--difficulty">Advanced</div>
           <div className="challenges-container__text">AB Challenge</div>
           <div className="challenges-container__block">
-            <img />
-            <div className="challenges-container__text">7 Days</div>
+            <img src={clock} />
+            <div className="challenges-container__text--duration">7 Days</div>
           </div>
         </div>
       </section>
@@ -30,8 +31,8 @@ function Home() {
             Mindfullness Challenge
           </div>
           <div className="challenges-container__block">
-            <img />
-            <div className="challenges-container__text">4 Days</div>
+            <img src={clock} />
+            <div className="challenges-container__text--duration">4 Days</div>
           </div>
         </div>
       </section>

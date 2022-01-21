@@ -4,6 +4,7 @@
 
 .challenge-report {
   background-color: $primary-background-color;
+  padding-top: 3rem;
 }
 
 .challenge-ring-container {
@@ -16,6 +17,13 @@
   padding: 0 2rem;
 
   &__title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+  }
+
+  &__congrats {
     font-size: 1.5rem;
     text-transform: uppercase;
   }

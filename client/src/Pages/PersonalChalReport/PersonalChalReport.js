@@ -97,11 +97,14 @@ export default class PersonalChalReport extends Component {
 
     return (
       <div className="challenge-report">
+        <div>
+          <h3 className="challenge-info__title">{title}</h3>
+        </div>
         <div className="challenge-ring-container">
           <ChallengeRing />
         </div>
         <div className="challenge-info">
-          <h3 className="challenge-info__title">{title}</h3>
+          <h3 className="challenge-info__congrats">Congratulations</h3>
           <p className="challenge-info__description">{description}</p>
         </div>
         <div className="lineChart-container">

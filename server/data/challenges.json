@@ -100,7 +100,7 @@
     "title": "Healthy Eating Challenge",
     "difficulty": "Beginner",
     "duration": 4,
-    "image": "http://localhost:8080/yoga-categories.jpg",
+    "image": "http://localhost:8080/healthy-eating-challenge.jpg",
     "description": "This challenge aims to develop healthy lifestyle habits. While fitness can improve your physical health, nutrition also plays a big role in achieving your goals.",
     "category": "Yoga",
     "challenges": [
@@ -147,7 +147,7 @@
     "title": "Squat Challenge",
     "difficulty": "Intermediate",
     "duration": 7,
-    "image": "http://localhost:8080/legs-categories.jpg",
+    "image": "http://localhost:8080/squat-challenge.jpg",
     "description": "The squat challenge is ideal for your lower body. Members start by completing a certain number of reps in the first few days. This number gradually increases so that by the end of the 7 days members are doing more reps and are feeling the difference in their glutes.",
     "category": "Legs",
     "challenges": [

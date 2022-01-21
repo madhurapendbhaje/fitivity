@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 export default class PersonalChalDetails extends Component {
   state = {
     selectedChallenge: {},
-    error: false,
+    error: false
   };
 
   componentDidMount() {
@@ -43,7 +43,13 @@ export default class PersonalChalDetails extends Component {
         <div className="challenge-header">
           <div className="challenge-header__image" alt="header"></div>
           <h3 className="challenge-header__title">{title}</h3>
+<<<<<<< HEAD
           <Tag tagText={difficulty} />
+=======
+          <div className="challenge-header__level">
+            <Tag tagText={difficulty} />
+          </div>
+>>>>>>> 81c31cb51f7931bb7b8e57317c2309ae6b429563
         </div>
         <div className="challenge-details">
           <div className="challenge-details__about">

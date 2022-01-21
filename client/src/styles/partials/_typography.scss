@@ -1,5 +1,6 @@
 @use "./variables" as *;
 @use "./colors" as *;
+@use "./global";
 
 @font-face {
   font-family: "proxima-nova";
@@ -44,26 +45,26 @@ h1 {
   font-size: $page-header-font-size;
   line-height: $page-header-line-height;
   font-weight: 700;
-  color: $primary-text-color;
+  color: $primary-font-color;
 }
 
 h2 {
   font-size: $section-header-font-size;
   line-height: $section-header-line-height;
   font-weight: 700;
-  color: $primary-text-color;
+  color: $primary-font-color;
 }
 
 h3 {
   font-size: $sub-header-font-size;
   line-height: $sub-header-line-height;
   font-weight: 700;
-  color: $primary-text-color;
+  color: $primary-font-color;
 }
 
 p {
   font-size: $body-font-size;
   line-height: $body-line-height;
   font-weight: 400;
-  color: $primary-text-color;
+  color: $primary-font-color;
 }

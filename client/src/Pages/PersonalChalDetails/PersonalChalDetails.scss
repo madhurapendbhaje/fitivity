@@ -3,7 +3,7 @@
 @use "../../styles/partials/variables" as *;
 
 .challenge-container {
-  padding: $section-padding $vertical-padding;
+  // padding: $section-padding $vertical-padding;
   background-color: $primary-background-color;
 }
 
@@ -16,9 +16,10 @@
 .challenge-header {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   padding: 0 1rem;
   position: absolute;
-  top: 180px;
+  top: 170px;
 
   &__image {
     width: 70px;
@@ -27,6 +28,7 @@
     background-size: cover;
     background-position: center;
     border-radius: 50%;
+    margin-right: 0.5rem;
   }
 
   &__title {
@@ -40,23 +42,18 @@
 
   &__level {
     display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    background-color: $primary-cta-color;
-    font-size: 12px;
-    line-height: 0;
-    height: 30px;
-    margin-top: 1.5rem;
-    padding: 0 0.5rem;
+    align-items: flex-end;
   }
 }
 
 .challenge-details {
   background-color: $primary-background-color;
+  padding: $section-padding $vertical-padding;
 
   &__about {
+    display: flex;
     &-title {
-      margin: 0;
+      margin-right: 2rem;
       padding: 1.5rem 0 1rem;
     }
   }

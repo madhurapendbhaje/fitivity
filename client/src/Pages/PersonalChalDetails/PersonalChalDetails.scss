@@ -4,31 +4,40 @@
 
 .challenge-container {
   background-color: $primary-background-color;
-}
 
-.challenge-video {
-  width: 100%;
-  margin: 0;
-  position: relative;
+  &__banner-container {
+    width: 100%;
+  }
+
+  &__banner {
+    margin: 0;
+    position: relative;
+    width: 100%;
+  }
 }
 
 .challenge-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-end;
   padding: 0 1rem;
   position: absolute;
-  top: 12.5rem;
+  top: 11.5rem;
   width: 100%;
 
-  &__image {
+  &__image-container {
     width: 70px;
     height: 70px;
-    background-image: url("../../styles/assets/image/video-placeholder.jpeg");
-    background-size: cover;
-    background-position: center;
     border-radius: 50%;
     margin-right: 0.5rem;
+    background-color: $secondary-cta-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__image {
+    width: 100%;
   }
 
   &__title {
@@ -42,6 +51,14 @@
 
   &__level {
     display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: $primary-cta-color;
+    font-size: 12px;
+    line-height: 0;
+    height: 30px;
+    margin-top: 1.5rem;
+    padding: 0 0.5rem;
     align-items: flex-end;
   }
 }

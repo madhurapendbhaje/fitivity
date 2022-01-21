@@ -14,7 +14,11 @@ function App() {
       <Switch>
         {/* <Redirect from="/" exact to="/personal-challenge" /> */}
         <Route path="/" exact component={Home} />
-        <Route path="/personal-challenge" exact component={PersonalChalList} />
+        <Route
+          path="/personal-challenge/categories/:category"
+          exact
+          component={PersonalChalList}
+        />
         <Route
           path="/personal-challenge/report/:challengeId"
           component={PersonalChalReport}

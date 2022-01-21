@@ -20,7 +20,7 @@ function App() {
           component={PersonalChalList}
         />
         <Route
-          path="/personal-challenge/report/:challengeId"
+          path="/personal-challenge/report"
           component={PersonalChalReport}
         />
         <Route

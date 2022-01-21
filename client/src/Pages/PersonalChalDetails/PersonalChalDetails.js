@@ -41,7 +41,7 @@ export default class PersonalChalDetails extends Component {
       image,
       icon,
       description,
-      challenges,
+      challenges
     } = this.state.selectedChallenge;
     return (
       <div className="challenge-container">
@@ -81,7 +81,8 @@ export default class PersonalChalDetails extends Component {
               return (
                 <Link
                   key={dayData.id}
-                  to={`/personal-challenge/${id}/${dayData.id}`}
+                  to={"/Day1"}
+                  // to={`/personal-challenge/${id}/${dayData.id}`}
                   className="challenge-tasks__link"
                 >
                   <DayCard dayData={dayData} image={image} />

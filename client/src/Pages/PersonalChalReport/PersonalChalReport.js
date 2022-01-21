@@ -3,6 +3,10 @@ import "./PersonalChalReport.scss";
 import axios from "axios";
 import { API_URL } from "../../util/Api";
 import ChallengeRing from "../../components/ChallengeRing/ChallengeRing";
+import backArrow from "../../styles/assets/icons/back.svg";
+import share from "../../styles/assets/icons/share.svg";
+import { Link } from "react-router-dom";
+
 import {
   LineChart,
   Line,
@@ -66,44 +70,54 @@ const data = [
 ];
 
 export default class PersonalChalReport extends Component {
-  state = {
-    selectedChallenge: {},
-    error: false
-  };
+  // state = {
+  //   selectedChallenge: {},
+  //   error: false
+  // };
 
-  componentDidMount() {
-    const challengeId = this.props.match.params.challengeId;
+  // componentDidMount() {
+  //   const challengeId = this.props.match.params.challengeId;
 
-    axios
-      .get(`${API_URL}/challenges/${challengeId}`)
-      .then((response) => {
-        this.setState({ selectedChallenge: response.data });
-      })
-      .catch((_err) => {
-        this.setState({ error: true });
-      });
-  }
+  //   axios
+  //     .get(`${API_URL}/challenges/${challengeId}`)
+  //     .then((response) => {
+  //       this.setState({ selectedChallenge: response.data });
+  //     })
+  //     .catch((_err) => {
+  //       this.setState({ error: true });
+  //     });
+  // }
 
   render() {
-    if (this.state.error) {
-      return (
-        <div>Error loading the challenge details, please try again later.</div>
-      );
-    }
+    // if (this.state.error) {
+    //   return (
+    //     <div>Error loading the challenge details, please try again later.</div>
+    //   );
+    // }
 
-    const { title, description, duration } = this.state.selectedChallenge;
+    // const { title, description, duration } = this.state.selectedChallenge;
 
     return (
       <div className="challenge-report">
+        <div className="icons-container">
+          <Link to="/Day1">
+            <img src={backArrow} className="back-icons" alt=""></img>
+          </Link>
+          <img src={share} className="back-icons" alt=""></img>
+        </div>
         <div>
-          <h3 className="challenge-info__title">{title}</h3>
+          <h3 className="challenge-info__title">Ab Challenge</h3>
         </div>
         <div className="challenge-ring-container">
           <ChallengeRing />
         </div>
         <div className="challenge-info">
           <h3 className="challenge-info__congrats">Congratulations</h3>
-          <p className="challenge-info__description">{description}</p>
+          <p className="challenge-info__description">
+            The ab workout challenge is all about getting a rock-hard core and
+            six-pack. Include movements like crunches, sit-ups, leg raises,
+            mountain climbers, and burpees.
+          </p>
         </div>
         <div className="lineChart-container">
           <LineChart

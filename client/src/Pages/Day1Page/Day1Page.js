@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import backArrow from "../../styles/assets/icons/back.svg";
+
 import "./Day1Page.scss";
 import {
   LineChart,
@@ -65,7 +68,15 @@ const data = [
 function Day1Page() {
   return (
     <div>
-      <div className="image-container"></div>
+      <div className="image-container">
+        <Link to="/">
+          <img src={backArrow} className="back-icons" alt=""></img>
+        </Link>
+        <Link to="/personal-challenge/report" className="finish-button">
+          Completed
+        </Link>
+      </div>
+
       <div className="line-chart-container">
         <LineChart
           width={350}

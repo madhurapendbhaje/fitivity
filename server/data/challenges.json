@@ -6,6 +6,7 @@
     "duration": 10,
     "image": "http://localhost:8080/image0.jpeg",
     "description": "The ab workout challenge is all about getting a rock-hard core and six-pack. Include movements like crunches, sit-ups, leg raises, mountain climbers, and burpees.",
+    "category": "Abs",
     "challenges": [
       {
         "id": "550b5927-bced-459a-9776-baa0f617bacd",
@@ -68,8 +69,9 @@
     "title": "Mindfulness Challenge",
     "difficulty": "Beginner",
     "duration": 4,
-    "image": "http://localhost:8080/image1.jpeg",
+    "image": "http://localhost:8080/yoga-categories.jpg",
     "description": "The mindfulness challenge promotes the practice of feeling present which can help to reduce stress, anxiety, and make you feel calmer. Include a mindfulness diary, guided meditation videos, and calming audio guidance.",
+    "category": "Yoga",
     "challenges": [
       {
         "id": "e0767917-5fb1-4d9c-9474-cd8766ef82f5",
@@ -98,8 +100,9 @@
     "title": "Healthy Eating Challenge",
     "difficulty": "Beginner",
     "duration": 4,
-    "image": "http://localhost:8080/image2.jpeg",
+    "image": "http://localhost:8080/yoga-categories.jpg",
     "description": "This challenge aims to develop healthy lifestyle habits. While fitness can improve your physical health, nutrition also plays a big role in achieving your goals.",
+    "category": "Yoga",
     "challenges": [
       {
         "id": "2c3bc55d-a4ed-4819-9308-7f084536d7f5",
@@ -141,11 +144,12 @@
   },
   {
     "id": "66b7d3c7-4023-47f1-a02c-520c9ca187a6",
-    "title": "Squat Challenge ",
+    "title": "Squat Challenge",
     "difficulty": "Intermediate",
     "duration": 7,
-    "image": "http://localhost:8080/image3.jpeg",
+    "image": "http://localhost:8080/legs-categories.jpg",
     "description": "The squat challenge is ideal for your lower body. Members start by completing a certain number of reps in the first few days. This number gradually increases so that by the end of the 7 days members are doing more reps and are feeling the difference in their glutes.",
+    "category": "Legs",
     "challenges": [
       {
         "id": "df28f938-ecf2-4707-a327-4dcff12ed460",
@@ -181,6 +185,37 @@
         "id": "5ba2f8c2-84c5-4d4d-9c4c-24b5fc2ab583",
         "day": "Day 7",
         "description": ["25 Knee Squats"]
+      }
+    ]
+  },
+  {
+    "id": "7f6222c2-6a56-41a5-a0a1-57c222c6f3e8",
+    "title": "Back Challenge",
+    "difficulty": "Beginner",
+    "duration": 4,
+    "image": "http://localhost:8080/back-categories.jpg",
+    "description": "The back challenge is ideal for your upper back and shoulders.",
+    "category": "Back",
+    "challenges": [
+      {
+        "id": "e7ed47e5-a240-4730-9e1a-2ff2b9bba147",
+        "day": "Day 1",
+        "description": ["30 min Timed Resistance band"]
+      },
+      {
+        "id": "9f374faa-8ea6-4759-b968-dcfde6871ec4",
+        "day": "Day 2",
+        "description": ["Cardio circuit"]
+      },
+      {
+        "id": "52dca118-f7a2-46c8-827f-4ba1309530d5",
+        "day": "Day 3",
+        "description": ["Back pulse"]
+      },
+      {
+        "id": "5985bb8d-48f8-4c57-ad81-be59469917e6",
+        "day": "Day 4",
+        "description": ["Air Pull-up"]
       }
     ]
   }

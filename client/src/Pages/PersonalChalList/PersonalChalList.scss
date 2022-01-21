@@ -18,6 +18,7 @@
   &__title {
     margin: 0;
     color: $primary-font-color;
+    text-transform: capitalize;
   }
   &__link {
     text-decoration: none;

@@ -35,7 +35,9 @@ export default class PersonalChal extends Component {
           <Link to="/">
             <img className="personal-challenge__logo" src={back} />
           </Link>
-          <h1 className="personal-challenge__title">Personal Challenges</h1>
+          <h1 className="personal-challenge__title">
+            {this.props.match.params.category} Challenges
+          </h1>
         </div>
         {this.state.challengesList.map((challengeData) => {
           return (

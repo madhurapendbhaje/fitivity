@@ -5,12 +5,14 @@ import PersonalChalDetails from "./Pages/PersonalChalDetails/PersonalChalDetails
 import PersonalChalReport from "./Pages/PersonalChalReport/PersonalChalReport";
 import TeamChalList from "./Pages/TeamChalList/TeamChalList";
 import TeamChalDetails from "./Pages/TeamChalDetails/TeamChalDetails";
+import Home from "./Pages/Home/Home";
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Redirect from="/" exact to="/personal-challenge" />
+        {/* <Redirect from="/" exact to="/personal-challenge" /> */}
+        <Route path="/" exact component={Home} />
         <Route path="/personal-challenge" exact component={PersonalChalList} />
         <Route
           path="/personal-challenge/report/:challengeId"

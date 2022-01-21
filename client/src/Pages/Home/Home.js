@@ -1,6 +1,8 @@
 import "./Home.scss";
 import clock from "../../assets/icons/Clock.svg";
 
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <>
@@ -20,7 +22,7 @@ function Home() {
             <img src={clock} />
             <div className="challenges-container__text--duration">7 Days</div>
           </div>
-        </div>
+        </Link>
       </section>
 
       <section className="suggested-challenges">
@@ -34,32 +36,40 @@ function Home() {
             <img src={clock} />
             <div className="challenges-container__text--duration">4 Days</div>
           </div>
-        </div>
+        </Link>
       </section>
 
       <section>
         <div className="categories-container">
           <label className="categories-container__label">Categories</label>
           <div className="categories-container__box">
-            <div className="categories-container__block--1">
-              <div className="categories-container__category">ABS</div>
-              <div className="categories-container__category">15 days</div>
-            </div>
+            <Link to="/personal-challenge/categories/abs" className="link">
+              <div className="categories-container__block--1">
+                <div className="categories-container__category">ABS</div>
+                <div className="categories-container__category">15 days</div>
+              </div>
+            </Link>
 
-            <div className="categories-container__block--2">
-              <div className="categories-container__category">BACK</div>
-              <div className="categories-container__category">30 days</div>
-            </div>
+            <Link to="/personal-challenge/categories/back" className="link">
+              <div className="categories-container__block--2">
+                <div className="categories-container__category">BACK</div>
+                <div className="categories-container__category">30 days</div>
+              </div>
+            </Link>
 
-            <div className="categories-container__block--3">
-              <div className="categories-container__category">YOGA</div>
-              <div className="categories-container__category">15 days</div>
-            </div>
+            <Link to="/personal-challenge/categories/yoga" className="link">
+              <div className="categories-container__block--3">
+                <div className="categories-container__category">YOGA</div>
+                <div className="categories-container__category">15 days</div>
+              </div>
+            </Link>
 
-            <div className="categories-container__block--4">
-              <div className="categories-container__category">LEGS</div>
-              <div className="categories-container__category">30 days</div>
-            </div>
+            <Link to="/personal-challenge/categories/legs" className="link">
+              <div className="categories-container__block--4">
+                <div className="categories-container__category">LEGS</div>
+                <div className="categories-container__category">30 days</div>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
